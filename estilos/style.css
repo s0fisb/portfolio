@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Secular+One&display=swap');
+
+:root{
+    --cor-primaria: #E55807;
+    --cor-secundaria: #7E1717;
+    --cor-terciaria: #068DA9;
+
+    --fonte-titulo: 'Secular One', sans-serif;
+    --fonte-textos: "Play", sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /* height: 100vh; */
+    box-sizing:border-box ;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-textos);
+    font-size: 0,75rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.destaque-título {
+    color:var(--cor-terciaria);
+        }
+
+.apresentacao{
+    padding: 5% 15% ;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2,25rem;
+    font-family:var(--fonte-titulo);
+}
+
+.apresentacao__conteudo__paragrafos {
+    font-size: 1,5rem;
+    font-family:var(--fonte-textos);
+}
+
+.apresentacao__botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__botoes__subtitulo{
+    font-family: var(--fonte-textos);
+    font-size: 2,81rem;
+}
+
+    .apresentacao__botoes__link{
+        /* background-color: #e45279; */
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        border: 10px double var(--cor-terciaria);
+        width: 50%;
+        text-align: center;
+        border-radius: 24px;
+        font-size: 1,5rem;
+        padding: 21.5px 0;
+        text-decoration: none;
+        color: var(--cor-secundaria);
+        font-family:var(--fonte-textos);
+    }
+
+    .apresentacao__botoes__link:hover{
+        background-color:var(--cor-terciaria);
+        padding: 4%;
+    }
+
+.apresentacao__imagem{
+    width: 50%;
+}
+
+    .rodape{
+        padding: 12px;
+     color:var(--cor-primaria);
+     background-color: var(--cor-secundaria);
+     text-align: center;   
+     font-family: var(--fonte-textos);
+     font-size: 1,25rem;
+     font-weight: 400;
+    }
+
+            @media (max-width: 1200px){
+                .cabecalho{
+                    padding: 10%;
+                }
+                .cabecalho__menu{
+                    justify-content: center;
+                }
+                .apresentacao{
+                    flex-direction: column-reverse;
+                    padding: 5%;
+                }
+                .apresentacao__conteudo{
+                    width: auto;
+                }
+            }
